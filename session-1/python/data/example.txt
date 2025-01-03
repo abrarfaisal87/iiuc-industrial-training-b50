@@ -1,0 +1,2 @@
+Hello, Python developers!
+Welcome to file I/O operations.
