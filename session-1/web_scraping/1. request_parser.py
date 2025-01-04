@@ -14,5 +14,3 @@ all_paragraphs = soup.find_all('p')
 
 for paragraph in all_paragraphs:
     print(paragraph.text)
-
-

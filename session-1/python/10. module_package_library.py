@@ -81,16 +81,19 @@ print("Pip examples: See comments for usage.")
 # Assignments
 # -----------
 # Assignment 1: Create a simple package with at least two modules, each containing one function.
+from module1 import greet
+from module2 import square
+
+print(greet("Alice"))
+print(square(5))
 # Assignment 2: Use pip to install any library that is new to you and write a small script to explore its functionality.
-import requests
-
-
-url = 'https://jsonplaceholder.typicode.com/posts/1'
-response = requests.get(url)
-if response.status_code == 200:
-    print("Request was successful!")
-    print("Response content:", response.json())
-else:
-    print("Request failed with status code:", response.status_code)
-# Congratulations on completing the comprehensive section on Python's modules, packages, libraries, and pip!
-# Review the assignments, try to solve them, and check your understanding of these essential Python features.
+# pip install requests
+# import requests
+# url = 'https://jsonplaceholder.typicode.com/posts/1'
+# response = requests.get(url)
+# if response.status_code == 200:
+#     print("Request was successful!")
+#     # Print the response content as JSON
+#     print("Response content:", response.json())
+# else:
+#     print(f"Request failed with status code: {response.status_code}")
