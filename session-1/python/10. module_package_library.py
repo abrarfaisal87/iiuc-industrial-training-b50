@@ -81,8 +81,7 @@ print("Pip examples: See comments for usage.")
 # Assignments
 # -----------
 # Assignment 1: Create a simple package with at least two modules, each containing one function.
-from module1 import greet
-from module2 import square
+from mypackage import greet, square
 
 print(greet("Alice"))
 print(square(5))
