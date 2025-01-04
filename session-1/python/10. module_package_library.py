@@ -87,13 +87,13 @@ from module2 import square
 print(greet("Alice"))
 print(square(5))
 # Assignment 2: Use pip to install any library that is new to you and write a small script to explore its functionality.
-# pip install requests
-# import requests
-# url = 'https://jsonplaceholder.typicode.com/posts/1'
-# response = requests.get(url)
-# if response.status_code == 200:
-#     print("Request was successful!")
-#     # Print the response content as JSON
-#     print("Response content:", response.json())
-# else:
-#     print(f"Request failed with status code: {response.status_code}")
+#pip install requests
+import requests
+url = 'https://jsonplaceholder.typicode.com/posts/34'
+response = requests.get(url)
+if response.status_code == 200:
+    print("Request was successful!")
+  
+    print("Response content:", response.json())
+else:
+    print(f"Request failed with status code: {response.status_code}")
