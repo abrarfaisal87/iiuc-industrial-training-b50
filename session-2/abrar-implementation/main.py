@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import uvicorn
-from pydantic import BaseModel
-from routes import news,summary
+from app.routes import news,summary
+from app.database import test_connection
 
 
 app = FastAPI()
@@ -18,4 +18,8 @@ def read_root():
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="localhost", port=8001, reload=True)
+    if test_connection():
+        print("Starting the FastAPI application...")
+        uvicorn.run("main:app", host="localhost", port=8001, reload=True)
+    else:
+        print("Failed to connect to the database. Application not starting.")
